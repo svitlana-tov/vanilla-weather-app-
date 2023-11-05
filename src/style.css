@@ -71,7 +71,7 @@ a {
 .other-data {
   font-size: 20px;
 }
-.weather-app-current-date {
+#weather-app-time {
   color: #ccb4ea;
 }
 .importand-data-container {

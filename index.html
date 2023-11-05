@@ -35,7 +35,7 @@
         <div class="weather-app-data">
           <div class="main-data">
             <h1 class="weather-app-city" id="weather-app-city"></h1>
-            <p class="weather-app-current-date">September 24, 7:26 PM</p>
+            <p class="weather-app-time" id="weather-app-time"></p>
           </div>
           <div class="important-data">
             <div class="importand-data-container">
@@ -44,13 +44,15 @@
               </h2>
               <div class="weather-app-unit">°C</div>
             </div>
-            <div class="weather-app-condition">🌧 Rain</div>
+            <div class="weather-app-condition" id="weather-app-condition">
+              Rain
+            </div>
           </div>
 
           <ul class="other-data">
-            <li>Feels like: 19°C</li>
-            <li>Humidity:%</li>
-            <li>Wind: mph</li>
+            <li>Feels like: <strong id="feels-like"></strong></li>
+            <li>Humidity: <strong id="humidity"> </strong></li>
+            <li>Wind: <strong id="wind-speed"></strong></li>
           </ul>
         </div>
       </main>
