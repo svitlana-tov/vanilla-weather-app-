@@ -13,9 +13,11 @@ function refreshWeather(response) {
   let feelsLikeElement = document.querySelector("#feels-like");
   feelsLikeElement.innerHTML = `${response.data.temperature.feels_like}°C`;
   let timeElement = document.querySelector("#weather-app-time");
-
   let date = new Date(response.data.time * 1000);
   timeElement.innerHTML = formatDate(date);
+  let iconElement = document.querySelector("#weather-app-icon");
+
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 }
 function formatDate(date) {
   let minutes = date.getMinutes();
