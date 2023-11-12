@@ -101,21 +101,22 @@ li strong {
 .weather-forecast {
   text-align: center;
   margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 .weather-forecast-date {
   font-size: 18px;
   color: #ccb4ea;
 }
 .weather-forecast-temperature {
-  font-size: 16px;
 }
 .weather-forecast-temperature-min {
-  opacity: 0.6;
+  opacity: 0.4;
+  font-size: 16px;
 }
 .weather-forecast-icon {
   width: 88px;
   height: 88px;
-
   display: block;
   margin: 0 auto;
 }
