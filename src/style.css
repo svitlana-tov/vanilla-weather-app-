@@ -28,7 +28,7 @@ a {
   max-width: 700px;
   margin: 35px auto;
   padding: 30px;
-  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.09);
   border-radius: 15px;
 }
 .search-form-input {
@@ -109,6 +109,7 @@ li strong {
   color: #ccb4ea;
 }
 .weather-forecast-temperature {
+  font-size: 16px;
 }
 .weather-forecast-temperature-min {
   opacity: 0.4;
