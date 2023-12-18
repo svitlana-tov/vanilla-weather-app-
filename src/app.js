@@ -11,9 +11,7 @@ function refreshWeather(response) {
   let windElement = document.querySelector("#wind-speed");
   windElement.innerHTML = `${response.data.wind.speed}km/h`;
   let feelsLikeElement = document.querySelector("#feels-like");
-  feelsLikeElement.innerHTML = Math.round(
-    `${response.data.temperature.feels_like}°C`
-  );
+  feelsLikeElement.innerHTML = `${response.data.temperature.feels_like}°C`;
   let timeElement = document.querySelector("#weather-app-time");
   let date = new Date(response.data.time * 1000);
   timeElement.innerHTML = formatDate(date);
